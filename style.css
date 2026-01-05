@@ -48,6 +48,11 @@ header {
     border-bottom: 2px solid white; /*Este es un subrayado blanco cuando estamos encima con el mouse */
 }
 
+.codigo i{
+    vertical-align: middle; /*Para que el icono se alinee con el texto */
+    margin-right: 5px; /*Para que haya espacio entre el icono y el texto */
+}
+
 #menu-icon{
     display: none;  /*Esto es para que solo se vea cuando la pagina sea mas chica */
 } 
@@ -275,4 +280,116 @@ section {
         right: 0;
     }
 
+}
+
+.about {
+    padding: 100px 10%;
+    background-color: #0f0f0f;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.skills {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.skills-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+}
+
+.skills-grid div {
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.skills-grid div:hover {
+    background-color: #4d4d4d;
+    transform: translateY(-5px);
+}
+
+.portfolio {
+    padding: 100px 10%;
+    background-color: #0f0f0f;
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 30px;
+    margin-top: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #1a1a1a;
+    transition: all 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #00bcd4;
+}
+
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #000;
+    font-size: 14px;
+    color: #777;
+}
+
+section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    
 }
